@@ -1,0 +1,91 @@
+/* Apply a colorful gradient background to the body */
+body {
+    background: linear-gradient(to bottom, #4CAF50, #2196F3, #9C27B0);/* Gradient from green (#4CAF50) to yellow (#FFFF00) */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Set the default font family for the entire page */
+    color: #333; /* Set default text color */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+/* Container for main content and sidebar */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+    border: 1px solid #ccc;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1; /* Sidebar takes 1/3 of available space */
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Sidebar occupies full viewport height */
+    max-width: 250px; /* Maximum width of sidebar */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Adjust font size for sidebar items */
+}
+
+/* Main content styles */
+.content {
+    flex: 3; /* Main content takes 2/3 of available space */
+    padding: 20px;
+    background-color: #fff; /* Set background color of content area */
+}
+
+/* General styles for lists and list items */
+ul, ol {
+    margin-bottom: 15px;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 2.5em; /* Set font size for main headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+h2 {
+    font-size: 2em; /* Set font size for secondary headings */
+    margin-bottom: 15px; /* Add space below headings */
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 1.3em; /* Set font size for paragraphs */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Add space below paragraphs */
+}
+
+/* Styling for anchor links */
+a {
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+    .sidebar {
+        display: none; /* Hide sidebar on small screens */
+    }
+    .content {
+        flex: 1; /* Full width for content on small screens */
+    }
+}
